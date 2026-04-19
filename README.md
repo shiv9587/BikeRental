@@ -1,4 +1,3 @@
-# BikeRental 
 # 🚴 RideXpress - Bike Rental Management System
 
 RideXpress is a simple and user-friendly **Bike Rental Management System** that allows users to rent bikes easily by selecting hours and riding modes.

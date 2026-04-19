@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RideXpress | Bike Rental Management System</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<header>
+  <h1>RideXpress</h1>
+  <p>Pay by hours • Choose riding mode</p>
+  <section class="info-boxes">
+
+  <div class="info-card">
+    <h2>40+</h2>
+    <p>Available Bikes</p>
+  </div>
+
+  <div class="info-card">
+    <h2>₹50/hr</h2>
+    <p>Starting Price</p>
+  </div>
+
+  <div class="info-card">
+    <h2>3 Modes</h2>
+    <p>Eco • Normal • Sport</p>
+  </div>
+
+  <div class="info-card">
+    <h2>24×7</h2>
+    <p>Customer Support</p>
+  </div>
+
+</section>
+
+</header>
+
+<section class="container">
+
+  <div class="card">
+    <img src="bike2.jpg">
+    <h3>KTM Duke</h3>
+    <h5>Sports Bike</h5>
+    <p>₹50 / hour</p>
+
+    <select id="mode1">
+      <option value="1">Normal Mode</option>
+      <option value="1.6">Sport Mode</option>
+    </select>
+
+    <input type="number" id="hrs1" placeholder="Hours">
+    <button onclick="rent('Sports Bike',120,'hrs1','mode1')">Rent Now</button>
+  </div>
+
+  <div class="card">
+    <img src="bike1.jpg">
+    <h3>RE Hunter 350cc</h3>
+    <h5>Cruiser Bike</h5>
+    <p>₹60 / hour</p>
+
+    <select id="mode2">
+      <option value="1.2">Normal Mode</option>
+      <option value="1.5">Sport Mode</option>
+    </select>
+
+    <input type="number" id="hrs2" placeholder="Hours">
+    <button onclick="rent('Cruiser Bike',100,'hrs2','mode2')">Rent Now</button>
+  </div>
+
+  <div class="card">
+    <img src="bike3.avif">
+    <h3>Honda Activa e</h3>
+    <h5>Electric Scooty</h5>
+    <p>₹20 / hour</p>
+
+    <select id="mode3">
+      <option value="1">Eco Mode</option>
+      <option value="1.2">Normal Mode</option>
+    </select>
+
+    <input type="number" id="hrs3" placeholder="Hours">
+    <button onclick="rent('Electric Scooty',60,'hrs3','mode3')">Rent Now</button>
+  </div>
+
+  <div class="card">
+    <img src="bike4.webp">
+    <h3> TVS Jupiter </h3>
+    <h5>Classic Scooty</h5>
+    <p>₹30 / hour</p>
+
+    <select id="mode4">
+      <option value="1">Eco Mode</option>
+      <option value="1.1">Normal Mode</option>
+    </select>
+
+    <input type="number" id="hrs4" placeholder="Hours">
+    <button onclick="rent('Classic Scooty',50,'hrs4','mode4')">Rent Now</button>
+  </div>
+
+  <div class="card">
+    <img src="bike5.jpg">
+    <h3> Royal Enfield Himalayan </h3>
+    <h5>Cruiser Bike</h5>
+    <p>₹70 / hour</p>
+
+    <select id="mode4">
+      <option value="1.1">Normal Mode</option>
+    </select>
+
+    <input type="number" id="hrs5" placeholder="Hours">
+    <button onclick="rent('Classic Scooty',50,'hrs5','mode5')">Rent Now</button>
+  </div>
+
+  <div class="card">
+    <img src="bike6.avif">
+    <h3>Royal Enfield Classic</h3>
+    <h5>Cruiser Bike</h5>
+    <p>₹65 / hour</p>
+
+    <select id="mode4">
+      <option value="1.1">Normal Mode</option>
+    </select>
+
+    <input type="number" id="hrs6" placeholder="Hours">
+    <button onclick="rent('Classic Scooty',50,'hrs6','mode6')">Rent Now</button>
+  </div>
+
+</section>
+
+<section class="result-box">
+  <h2>🧾 Booking Summary</h2>
+  <p id="result">No booking yet</p>
+</section>
+
+<footer>
+  <p>© 2026 RideXpress. All Rights Reserved.</p>
+</footer>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
